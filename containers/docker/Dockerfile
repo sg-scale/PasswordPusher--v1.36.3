@@ -2,7 +2,7 @@
 ARG BUNDLE_WITHOUT=development:test:private
 ARG BUNDLE_DEPLOYMENT=true
 
-FROM ruby:3.2-alpine AS build-env
+FROM ruby:4.0-alpine AS build-env
 
 # include global args
 ARG BUNDLE_WITHOUT
@@ -62,7 +62,7 @@ RUN rm -rf node_modules tmp/cache vendor/assets spec \
 
 ################## Build done ##################
 
-FROM ruby:3.2-alpine
+FROM ruby:4.0-alpine
 
 # include global args
 ARG BUNDLE_WITHOUT
