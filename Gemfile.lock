@@ -117,7 +117,7 @@ GEM
       nokogiri (~> 1, >= 1.10.8)
     base64 (0.2.0)
     bcrypt (3.1.20)
-    benchmark-ips (2.13.0)
+    benchmark-ips (2.15.1)
     better_html (2.0.2)
       actionview (>= 6.0)
       activesupport (>= 6.0)
